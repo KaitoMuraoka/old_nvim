@@ -109,3 +109,7 @@ endfunction
 
 " Markdown
 let g:previm_open_cmd = 'open -a Safari'
+
+let g:ale_disable_lsp = 1
+let g:ale_lint_on_text_changed = 1
+nmap  gd (coc-definition)
