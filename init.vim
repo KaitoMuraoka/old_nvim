@@ -1,5 +1,5 @@
 call plug#begin('~/.vim/plugged')
-Plug 'joshdick/onedark.vim' "color
+"Plug 'joshdick/onedark.vim' "color
 Plug 'itchyny/lightline.vim' "ステータスライン
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } "ファイルエクスプローラ
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -17,7 +17,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'} "入力補完
 Plug 'jiangmiao/auto-pairs' "自動で閉じ括弧
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'neovim/nvim-lspconfig'
-" gitgutter
+Plug 'brglng/vim-im-select' "Vim-IM-select: url https://vimawesome.com/plugin/vim-im-select
+"gitgutter
 Plug 'iwataka/gitignore.vim'
 " Flutter Plugin
 Plug 'dart-lang/dart-vim-plugin'
@@ -39,9 +40,9 @@ let g:python_host_prog = $HOME . '/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = $HOME . '/.pyenv/versions/neovim3/bin/python'
 
 " joshdick/onedark.vim
-colorscheme onedark
+"colorscheme onedark
 " itchyny/lightline.vim
-let g:lightline = {'colorscheme': 'onedark'}
+"let g:lightline = {'colorscheme': 'onedark'}
 
 " dense-analysis/ale
 let g:ale_set_highlights = 0
@@ -57,33 +58,13 @@ let g:ale_fix_on_save = 1
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
-let g:lightline = {'colorscheme': 'onedark'}
-let g:lightline.component_expand = {
-  \   'linter_checking': 'lightline#ale#checking',
-  \   'linter_warnings': 'lightline#ale#warnings',
-  \   'linter_errors': 'lightline#ale#errors',
-  \   'linter_ok': 'lightline#ale#ok',
-  \ }
-let g:lightline.component_type = {
-  \   'linter_checking': 'left',
-  \   'linter_warnings': 'warning',
-  \   'linter_errors': 'error',
-  \   'linter_ok': 'left',
-  \ }
-let g:lightline.active = {
-  \   'left': [
-  \     ['mode', 'paste'],
-  \     ['readonly', 'filename', 'modified'],
-  \     ['linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok'],
-  \   ]
-  \ }
-
 " scrooloose/nerdtree
 nmap <C-e> :NERDTreeToggle<CR>
 " junegunn/fzf.vim
 nmap <C-p> :History<CR>
 
-
+"VIM-IM-SELECT
+let g:im_select_default = 'com.apple.keylayout.ABC'
 
 " kassio/neoterm
 let g:neoterm_default_mod='belowright'
