@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-"Plug 'joshdick/onedark.vim' "color
 Plug 'itchyny/lightline.vim' "ステータスライン
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } "ファイルエクスプローラ
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
