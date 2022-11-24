@@ -16,6 +16,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'} "入力補完
 Plug 'jiangmiao/auto-pairs' "自動で閉じ括弧
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'neovim/nvim-lspconfig'
+Plug 'tpope/vim-commentary' "コメントアウト
 Plug 'brglng/vim-im-select' "Vim-IM-select: url https://vimawesome.com/plugin/vim-im-select
 "gitgutter
 Plug 'iwataka/gitignore.vim'
