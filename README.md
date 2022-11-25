@@ -6,7 +6,7 @@
 
 | 名称 | Plugin名 | URL |
 | ---- | -------- | --- |
-| ステータスライン | vim-airline  | https://github.com/vim-airline/vim-airline |
+|ステータスライン | vim-airline  | https://github.com/vim-airline/vim-airline |
 |ファイルエクスプローラー|The NERDTree|https://github.com/preservim/nerdtree|
 |曖昧検索|fzf|https://github.com/junegunn/fzf　
 |Git連携|vim-fugitive|https://github.com/tpope/vim-fugitive
@@ -33,6 +33,23 @@
 
 
 ## 使用方法
+### 曖昧検索
+`:help fzf-vim-commands`を実行すると使用可能になったコマンドの一覧が確認できる。
+
+### Git連携
+`:Gdiffsplit`や`:Gblame`を使うことができる
+
+### Linter
+警告(`--`)とエラー(`>>`) が左端に表示される。
+`control + k`,`control + j`で警告とエラーの箇所に移動できる
+
+### 定義元ジャンプ
+`gd`を押すと、関数定義元にジャンプ
+
+`gr`を押すと、参照一覧を表示
+
+`K`を押すとドキュメントをホバー表示できる
+
 ### ファイルエクスプローラー
 `:NERDTreeToggle`を実行するとファイルエクスプローラーが表示される。
 
