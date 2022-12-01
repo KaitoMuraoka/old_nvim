@@ -16,6 +16,16 @@
         "/style.css",
         "style.css"
     ],
+    // Vue.js
+    "eslint.autoFixOnSave": true,
+    "eslint.filetype": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+      "vue"
+    ]
+
     // Swift
       "suggest.enablePreselect": true,
   "languageserver": {
