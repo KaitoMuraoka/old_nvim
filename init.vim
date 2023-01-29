@@ -29,6 +29,7 @@ Plug 'keith/swift.vim'
 " Markdown
 Plug 'plasticboy/vim-markdown'
 Plug 'previm/previm'
+Plug 'ekalinin/Dockerfile.vim' " Dockerfile.vim
 call plug#end()
 
 set number
