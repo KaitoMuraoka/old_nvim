@@ -27,9 +27,10 @@ Plug 'thosakwe/vim-flutter'
 "Swift Plugin
 Plug 'keith/swift.vim'
 " Markdown
-Plug 'plasticboy/vim-markdown'
+"Plug 'plasticboy/vim-markdown'
 Plug 'previm/previm'
 Plug 'ekalinin/Dockerfile.vim' " Dockerfile.vim
+Plug 'wakatime/vim-wakatime' " WakaTime
 call plug#end()
 
 set number
