@@ -21,6 +21,7 @@
 |自動で閉じかっこ|Auto Pairs|https://github.com/jiangmiao/auto-pairs
 |コメントアウト|commentary.vim|https://github.com/tpope/vim-commentary
 |escで全角→半角へ|vim-im-select|https://github.com/brglng/vim-im-select
+|PlantUMLのPreviewer|plantuml-previewer.vim|https://github.com/weirongxu/plantuml-previewer.vim
 
 ## 言語関係
 | プログラミング言語 | Plugin名 | URL |

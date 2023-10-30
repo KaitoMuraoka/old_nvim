@@ -27,9 +27,11 @@ Plug 'thosakwe/vim-flutter'
 "Swift Plugin
 Plug 'keith/swift.vim'
 " Markdown
-Plug 'plasticboy/vim-markdown'
+"Plug 'plasticboy/vim-markdown'
 Plug 'previm/previm'
 Plug 'ekalinin/Dockerfile.vim' " Dockerfile.vim
+Plug 'wakatime/vim-wakatime' " WakaTime
+Plug 'weirongxu/plantuml-previewer.vim' " PlantUMLのPreviewer
 call plug#end()
 
 set number
@@ -53,10 +55,10 @@ let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_fixers = {
   \   '*': ['remove_trailing_lines', 'trim_whitespace'],
   \   'python': ['black'],
+  \   'ruby': ['rubocop']
   \ }
 let g:ale_fix_on_save = 1
 
-" let g:ale_fix_on_save = 1
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
@@ -154,3 +156,10 @@ let g:closetag_shortcut = '>'
 " Add > at current position without closing the current tag, default is ''
 "
 let g:closetag_close_shortcut = '<leader>>'
+
+" RuboCopを保存と自動に起こす
+let g:ale_linters = {
+\   'ruby': ['rubocop'],
+\}
+let g:ale_linters_explicit = 1
+let g:airline#extensions#ale#enabled = 1
