@@ -31,6 +31,7 @@ Plug 'keith/swift.vim'
 Plug 'previm/previm'
 Plug 'ekalinin/Dockerfile.vim' " Dockerfile.vim
 Plug 'wakatime/vim-wakatime' " WakaTime
+Plug 'weirongxu/plantuml-previewer.vim' " PlantUMLのPreviewer
 call plug#end()
 
 set number
